@@ -1,0 +1,8 @@
+Package: usefulstuff
+Version: 1.01
+Author: Alyssa Frazee
+Maintainer: Alyssa Frazee <alyssa.frazee@gmail.com>
+License: MIT + file LICENSE
+Title: useful stuff
+Description: R miscellany that doesn't really belong in my other packages
+URL: https://github.com/alyssafrazee/usefulstuff
