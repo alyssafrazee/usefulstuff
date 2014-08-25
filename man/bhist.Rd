@@ -4,7 +4,7 @@
 \title{overlay histograms!}
 \usage{
 bhist(z, add = FALSE, breaks = 20, col = "black", fill = "orange",
-  alpha = 0.5, xlim = c(-0.01, 1.01), ylim = NULL, ...)
+  alpha = 0.5, xlim = c(-0.01, 1.01), ylim = NULL, freq = TRUE, ...)
 }
 \arguments{
 \item{z}{numeric, vector of values for desired histogram}
@@ -16,6 +16,8 @@ bhist(z, add = FALSE, breaks = 20, col = "black", fill = "orange",
 \item{col}{line color for histogram's bins}
 
 \item{fill}{fill color for histogram}
+
+\item{freq}{whether to make a frequency or density histogram. (TRUE for frequency)}
 }
 \description{
 base graphics implementation of overlaid histograms
