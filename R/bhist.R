@@ -6,11 +6,10 @@
 #' @param breaks see \code{breaks} in \code{hist()}
 #' @param col line color for histogram's bins
 #' @param fill fill color for histogram
-#' @param freq whether to make a frequency or density histogram. (TRUE for frequency)
 #' @export
 bhist = function(z, add=FALSE, breaks=20, col="black", fill="orange", 
-    alpha=0.5, xlim=c(-0.01,1.01), ylim=NULL, freq=TRUE, ...){
-    h = hist(z, breaks=breaks, plot=FALSE, freq=freq)
+    alpha=0.5, xlim=c(-0.01,1.01), ylim=NULL,...){
+    h = hist(z, breaks=breaks, plot=FALSE)
     if(is.null(ylim)) ylim = c(0,max(h$counts))
     if(!add){plot(0, 0, type="n", xlim=xlim, ylim=ylim,...)}
     hb = rep(h$breaks, each=2)[-1]
