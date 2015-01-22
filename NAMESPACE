@@ -2,6 +2,7 @@
 
 export(.ls.objects)
 export(bhist)
+export(decimalplaces)
 export(listObjects)
 export(makeTransparent)
 export(makepretty)
